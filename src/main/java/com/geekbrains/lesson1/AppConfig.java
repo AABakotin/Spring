@@ -1,11 +1,7 @@
-package lesson1;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+package com.geekbrains.lesson1;
 
 //@Configuration
-@ComponentScan
+//@ComponentScan
 public class AppConfig {
 
 //    @Bean (name = "LOR")

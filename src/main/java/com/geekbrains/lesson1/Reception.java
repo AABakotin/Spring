@@ -1,4 +1,4 @@
-package lesson1;
+package com.geekbrains.lesson1;
 
 public interface Reception {
 
