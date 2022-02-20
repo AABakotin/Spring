@@ -1,4 +1,4 @@
-package lesson2;
+package com.geekbrains.lesson2;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

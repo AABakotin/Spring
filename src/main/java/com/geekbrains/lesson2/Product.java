@@ -1,4 +1,4 @@
-package lesson2;
+package com.geekbrains.lesson2;
 
 public class Product {
 
