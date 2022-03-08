@@ -1,6 +1,7 @@
-SET FOREIGN_KEY_CHECKS = 0;
 
-DROP TABLE IF EXISTS fresh_market;
+USE geek_db;
+
+DROP TABLE IF EXISTS categories;
 
 CREATE TABLE categories (
   id int(11) NOT NULL AUTO_INCREMENT,
