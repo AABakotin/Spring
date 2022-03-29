@@ -1,9 +1,9 @@
-package com.geekbrains.lesson10.controllers;
+package com.geekbrains.lesson11.controllers;
 
-import com.geekbrains.lesson10.entities.Role;
-import com.geekbrains.lesson10.entities.User;
-import com.geekbrains.lesson10.repositories.RoleRepository;
-import com.geekbrains.lesson10.services.UserService;
+import com.geekbrains.lesson11.entities.Role;
+import com.geekbrains.lesson11.entities.User;
+import com.geekbrains.lesson11.repositories.RoleRepository;
+import com.geekbrains.lesson11.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

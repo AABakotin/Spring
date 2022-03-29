@@ -1,8 +1,8 @@
-package com.geekbrains.lesson10.services;
+package com.geekbrains.lesson11.services;
 
 
-import com.geekbrains.lesson10.entities.Role;
-import com.geekbrains.lesson10.repositories.RoleRepository;
+import com.geekbrains.lesson11.entities.Role;
+import com.geekbrains.lesson11.repositories.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
