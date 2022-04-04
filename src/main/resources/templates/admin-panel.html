@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org" xmlns:spring="http://www.w3.org/1999/XSL/Transform">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
+    <title>Admin Dashboard</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <script type="text/javascript" th:src="@{/webjars/jquery/3.3.1/dist/jquery.min.js}"></script>
@@ -9,30 +12,30 @@
     <script type="text/javascript" th:src="@{/resources/js/main.js}"></script>
     <link type="text/css" rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"/>
     <link type="text/css" rel="stylesheet" th:href="@{/resources/css/main.css}"/>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
 </head>
-<body>
 
+<body>
 <div class="fluid-container">
     <nav>
-        <div th:replace="~{my-menu :: mymenu(Index)}">
+        <div th:replace="~{my-menu :: mymenu(rolesList)}">
         </div>
     </nav>
-    <div class="visible-md" style="height:80px;"> </div>
 </div>
 <div class="container">
-    <h1>Welcome page</h1>
-    <br>
-    <a href="/products/list">Show product list</a>
-    <br>
-    <a href="/products/add">Add new product</a>
-    <br><br><br><br><br>
+    <h1>Admin Dashboard</h1>
+    <h2>Roles</h2>
+    <table class="table">
+        <thead>
+        <tr class="thead-dark">
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+        </thead>
+        <tr th:each="role : ${rolesList}">
+            <td th:text="${role.id}"/>
+            <td th:text="${role.name}"/>
+        </tr>
+    </table>
 </div>
-<footer>
-    <div th:replace="~{my-footer}">
-    </div>
-</footer>
 </body>
 </html>
